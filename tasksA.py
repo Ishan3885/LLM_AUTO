@@ -8,7 +8,7 @@ import os
 import requests
 from scipy.spatial.distance import cosine
 from dotenv import load_dotenv
-
+from fastapi import HTTPException
 load_dotenv()
 
 AIPROXY_TOKEN = os.getenv('AIPROXY_TOKEN')
